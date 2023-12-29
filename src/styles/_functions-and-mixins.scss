@@ -1,0 +1,32 @@
+@function to-rem($pixels) {
+  @return calc(#{$pixels} / 16 * 1rem);
+}
+
+$breakpoints: (
+        'xs': to-rem(480),
+        'sm': to-rem(768),
+        'md': to-rem(992),
+        'lg': to-rem(1200),
+        'xl': to-rem(1400),
+        '2xl': to-rem(1536),
+);
+
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
+}
+
+@mixin media($breakpoint) {
+  @media (min-width: breakpoint($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin main-container() {
+  width: 100%;
+  margin: 0 auto;
+  @each $bp, $size in $breakpoints {
+    @include media($bp) {
+      max-width: $size;
+    }
+  }
+}
