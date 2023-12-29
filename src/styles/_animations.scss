@@ -1,0 +1,67 @@
+// fadeIn
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+// fadeOut
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+// slideInFromLeft
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-from-left {
+  animation-name: slideInFromLeft;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+// slideOutToLeft
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-out-to-left {
+  animation-name: slideOutToLeft;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
