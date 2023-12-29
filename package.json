@@ -1,0 +1,42 @@
+{
+  "name": "simplybuilder-front-end",
+  "version": "0.0.1",
+  "description": "front end framework builder",
+  "main": "src/main.js",
+  "private": true,
+  "homepage": "https://github.com/jamilservicos/SimplyBuilder/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamilservicos/SimplyBuilder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamilservicos/SimplyBuilder/issues"
+  },
+  "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10.x"
+  },
+  "keywords": [
+    "jamilservicos",
+    "jamilservices",
+    "simply",
+    "nodejs",
+    "javascript",
+    "simply-builder",
+    "builder",
+    "framework"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "docs": "npx jsdoc -c jsdoc.json"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.69.5",
+    "vite": "^5.0.10"
+  }
+}
