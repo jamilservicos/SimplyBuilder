@@ -76,6 +76,7 @@ SimplyBuilder is a lightweight, modular JavaScript framework for building intera
    // Convert '24px' to rem
    const remValue = UtilsApp.toRem("24px");
    ```
+   
 
 ### License
 Released under [MIT](/LICENSE) by [@jamilservicos](https://github.com/jamilservicos).
