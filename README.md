@@ -8,7 +8,9 @@ SimplyBuilder is a lightweight, modular JavaScript framework for building intera
 
 [![Made with JavaScript](https://img.shields.io/badge/Made_with-JavaScript-blue?logo=javascript&logoColor=white)](https://www.javascript.com/)
 [![Made with Node.js](https://img.shields.io/badge/Node.js->=20.10-blue?logo=node.js&logoColor=white)](https://nodejs.org)
-[![Made with Vite.js](https://img.shields.io/badge/Vite.js-blue?logo=vite&logoColor=rgb(189%2C%2052%2C%20254))](https://vitejs.dev)
+[![Made with Vite.js](https://img.shields.io/badge/Vite.js-blue?logo=vite&logoColor=rgb(189%2C%2052%2C%20254))](https://vitejs.dev)   
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/simply-builder-starter?embed=1&hideNavigation=1&view=preview)
 
 
 ## Features
@@ -74,8 +76,6 @@ SimplyBuilder is a lightweight, modular JavaScript framework for building intera
    // Convert '24px' to rem
    const remValue = UtilsApp.toRem("24px");
    ```
-
-<iframe width="100%" src="https://stackblitz.com/edit/simply-builder-starter?embed=1&hideNavigation=1&view=preview"></iframe>
 
 ### License
 Released under [MIT](/LICENSE) by [@jamilservicos](https://github.com/jamilservicos).
