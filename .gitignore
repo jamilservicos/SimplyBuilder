@@ -5,8 +5,8 @@
 !.github/
 !.github/**
 
-!public/
-!public/**
+!static/
+!static/**
 
 !src/
 !src/**
