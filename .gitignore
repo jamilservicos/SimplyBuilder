@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!index.html
+!README.md
+!LICENSE
+!AUTHORS
+
+!assets/
+!assets/**
