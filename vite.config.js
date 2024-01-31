@@ -2,11 +2,11 @@
 
 // vite.config.js
 import { defineConfig } from 'vite';
-import path from 'path';
-
+import path from 'node:path';
 export default defineConfig({
     root: './src',
     build: {
+        manifest: false,
         outDir: '../dist',
     },
     css: {
@@ -14,13 +14,20 @@ export default defineConfig({
             config: './postcss.config.js'
         }
     },
-    publicDir: '../public',
+    publicDir: '../static',
     resolve: {
         alias: {
-            '@stores': path.resolve(__dirname, 'src/stores'),
-            '@components': path.resolve(__dirname, 'src/components'),
-            '@styles': path.resolve(__dirname, 'src/styles'),
+            '@core-components': path.resolve(__dirname, 'src', 'core', 'components'),
+            '@core-stores': path.resolve(__dirname, 'src', 'core', 'stores'),
+            '@app-components': path.resolve(__dirname, 'src', 'app', 'components'),
+            '@app-stores': path.resolve(__dirname, 'src', 'app', 'stores'),
+            '@app-styles': path.resolve(__dirname, 'src', 'app', 'styles'),
+            '@styles': path.resolve(__dirname, 'src', 'styles'),
         },
+    },
+    server: {
+        cors: false,
+        open: false
     },
     plugins: []
 });
