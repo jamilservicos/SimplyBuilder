@@ -1,10 +1,27 @@
 {
   "name": "simplybuilder-front-end",
-  "version": "0.0.1",
-  "description": "front end framework builder",
-  "main": "src/main.js",
+  "description": "SimplyBuilder - Front-End Framework Builder",
   "private": true,
-  "homepage": "https://github.com/jamilservicos/SimplyBuilder/blob/main/README.md",
+  "type": "module",
+  "version": "0.1.0",
+  "main": "src/main.js",
+  "keywords": [
+    "jamilservicos",
+    "jamilservices",
+    "simply",
+    "nodejs",
+    "vitejs",
+    "javascript",
+    "simply-builder",
+    "simplybuilder",
+    "builder",
+    "front",
+    "front-end",
+    "frontend",
+    "design",
+    "framework"
+  ],
+  "homepage": "https://simplybuilder.github.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamilservicos/SimplyBuilder.git"
@@ -17,26 +34,17 @@
   "engines": {
     "node": ">=20.10.x"
   },
-  "keywords": [
-    "jamilservicos",
-    "jamilservices",
-    "simply",
-    "nodejs",
-    "javascript",
-    "simply-builder",
-    "builder",
-    "framework"
-  ],
-  "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --host",
-    "docs": "npx jsdoc -c jsdoc.json"
+    "postinstall": "npm run build",
+    "uninstall": "npm run build"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "sass": "^1.69.5",
-    "vite": "^5.0.10"
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "sass": "^1.66.1",
+    "vite": "^4.4.5"
   }
 }
